@@ -31,3 +31,17 @@ urlpatterns += [
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
+
+# migrate before doing this
+# for test we can use superuser admin(create it via manage.py)(admin,admin,admin@admin.com)
+# check in Postman by sendin http://localhost:8000/api/token/ ("POST")
+# Body -> x-www-form-urlencoded
+# set `username`, `password`
+
+# or curl this
+"""
+curl --location 'http://localhost:8000/api/token/' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'password=admin' \
+--data-urlencode 'username=admin'
+"""
