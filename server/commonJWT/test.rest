@@ -6,10 +6,13 @@ Content-Type: application/json
 
 # install plugin before usage (rest client)
 
+###
 POST http://localhost:8000/signup
 Content-Type: application/json
 
-{ "username": "test_user", "password": "test123", "email": "test@test.com" }
+{ "username": "test_user1", "password": "test123", "email": "test1@test.com" }
+
+###
 
 POST http://localhost:8000/test_token
 Content-Type: application/json
