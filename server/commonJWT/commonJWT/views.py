@@ -9,6 +9,6 @@ def login(request):
 def signup(request):
     return Response({})
 
-@api_view(["POST"])
+@api_view(["GET"])
 def test_token(request):
     return Response({})
