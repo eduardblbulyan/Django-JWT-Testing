@@ -1,7 +1,7 @@
 POST http://localhost:8000/login
 Content-Type: application/json
 
-{"username": "admin", "password": "Pass1234"}
+{"username": "test_user2", "password": "test123"}
 
 
 # install plugin before usage (rest client)
@@ -10,7 +10,7 @@ Content-Type: application/json
 POST http://localhost:8000/signup
 Content-Type: application/json
 
-{ "username": "test_user1", "password": "test123", "email": "test1@test.com" }
+{ "username": "test_user2", "password": "test123", "email": "test1@test.com" }
 
 ###
 
